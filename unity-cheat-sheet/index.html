@@ -141,13 +141,7 @@ void Move() {
 }</code></pre>
         
       </div>
-      <div class="row">
-        <h5><s>Get a built-in one</s></h5>
-        <p><s>You can access one of Unity's built in components using a shorthand syntax. All available components using this syntax are listed under 'Variables' on the <a href="http://docs.unity3d.com/ScriptReference/Component.html">Component reference page</a>.</s> <b>NOTE: In Unity 5.0 or later,</b> the only built-in shortcut is now <a href="http://docs.unity3d.com/ScriptReference/Component-transform.html">transform</a> (lowercase T). <a href="http://blogs.unity3d.com/2014/06/23/unity5-api-changes-automatic-script-updating/">(Why?)</a></p>
-        <pre style="text-decoration: line-through;" ><code>gameObject.
-        <strong>rigidbody</strong>.
-        <a href="http://docs.unity3d.com/ScriptReference/Rigidbody.AddForce.html">AddForce</a>(0, 20, 0);</code></pre>
-      </div>
+
       <div class="row">
         <h5>Use GetComponent</h5>
         <p>You can access any component on an object using the <a href="http://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html">GetComponent</a> method. This is how you will access your own components.</p>
@@ -157,7 +151,7 @@ void Move() {
         
       </div>
       <div class="row">
-        <h5>Use a variable</h5>
+        <h5>Use a public variable</h5>
         <p>You can store a reference to a Component in a variable and use that.</p>
         <img src="./index_files/component-variable.gif">
         <p>You can drag GameObjects onto the variable in the editor. Unity will extract the Component for you.</p>
@@ -169,6 +163,14 @@ void <a href="http://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html"
 }</code></pre>
       </div>
       
+	        <div class="row">
+        <h5><s>Get a built-in one</s></h5>
+        <p><s>You can access one of Unity's built in components using a shorthand syntax. All available components using this syntax are listed under 'Variables' on the <a href="http://docs.unity3d.com/ScriptReference/Component.html">Component reference page</a>.</s> <b>NOTE: In Unity 5.0 or later,</b> the only built-in shortcut is now <a href="http://docs.unity3d.com/ScriptReference/Component-transform.html">transform</a> (lowercase T). <a href="http://blogs.unity3d.com/2014/06/23/unity5-api-changes-automatic-script-updating/">(Why?)</a></p>
+        <pre style="text-decoration: line-through;" ><code>gameObject.
+        <strong>rigidbody</strong>.
+        <a href="http://docs.unity3d.com/ScriptReference/Rigidbody.AddForce.html">AddForce</a>(0, 20, 0);</code></pre>
+      </div>
+	  
       </div>
     
     <div class="one-third column" style="background-color: #ffeeff;">
@@ -207,7 +209,7 @@ void <a href="http://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html"
       </div>
       <div class="row">
         <h5>SendMessage</h5>
-        <p>You can trigger a similarly named method on all components attached to a GameObject using <a href="http://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html">SendMessage</a>. This allows you to skip specifying a component.</p>
+        <p><b>(NOT RECOMMENDED)</b> You can trigger a similarly named method on all components attached to a GameObject using <a href="http://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html">SendMessage</a>. This allows you to skip specifying a component.</p>
         <pre><code><a href="http://docs.unity3d.com/ScriptReference/GameObject.Find.html">GameObject.Find</a>("Player").
           <a href="http://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html"><strong>SendMessage</strong></a>("Dance");</code></pre>
       </div>

@@ -1,0 +1,70 @@
+/* Marker window */
+#markerWindow {
+  /*background: #fff;*/
+
+  position: absolute;
+  z-index: 200;
+
+  /* hide by default */
+  display: none;
+
+  width: 180px;
+  height: auto;
+  background-color: rgba(49, 47, 47, 0.57);
+  position: absolute;
+
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 4px;
+  background-image: url(/redesign_2014_images/bg/diag_line_2.png);
+  border-style: solid;
+  border-width: 1px;
+}
+
+#markerWindowHeader p, #markerWindowFooter p, #markerWindowHeader a, #markerWindowFooter a {
+  padding: 0px;
+  margin:0px;
+  font-size:12px;
+  color: #f0f0ef !important;
+  text-align:center;
+  height:auto;
+  max-height:30px;
+  overflow:hidden;
+  margin-top:3px;
+  margin-bottom:8px;
+  padding-bottom:3px;
+  line-height:14px;
+  white-space: normal;
+}
+
+#markerWindowHeader #markerWindowClose {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  width: 9px;
+  height: 9px;
+  background: url('/images/markers/close_button.png');
+}
+
+#markerWindowHeader #markerWindowClose:hover {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  width: 9px;
+  height: 9px;
+  background: url('/images/markers/close_button.hover.png');
+  text-decoration: none;
+}
+
+.markerWindowSingle #markerWindowMainImage img {
+  display: block;
+  margin: 0 auto;
+  width: 128px;
+
+  padding:4px;
+  border-radius: 4px;
+}
+
+#markerWindowTitle {
+  width: 90%;
+}
